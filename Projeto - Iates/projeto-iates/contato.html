@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxo - Contato</title>
+  <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div id="title">
+        <img src="images/barco1.png" alt="ícone de barco" />
+        <div class="headtitle">
+          <h1>Luxo</h1>
+          <h2>Aluguel de iates</h2>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="navmenu">
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="aluguel.html">Aluguel de iates</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="tripulacao.html">Tripulação</a></li>
+          <li><a href="contato.html" class="accent">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="pagtitle">
+        <div class="bgtitle"></div>
+        <h2>Entre em contato</h2>
+      </div>
+
+      <form>
+        <div class="entry">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Nome" />
+        </div>
+
+        <div class="entry">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="E-mail" />
+        </div>
+
+        <div class="entry">
+          <label for="msg">Mensagem</label>
+          <textarea cols="40" rows="7" id="msg" placeholder="Digite sua mensagem"></textarea>
+        </div>
+        <div class="buttons">
+          <button class="button" onclick="inserirMensagem()">Enviar</button>
+        </div>
+      </form>
+
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2023 por Luxo aluguel de iates</p>
+    <p class="adm"><a href="admin.html">Área Restrita</a></p>
+  </footer>
+  <script src="./js/jquery-3.6.4.min.js"></script>
+  <script src="./js/api.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,413 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* var */
+
+:root {
+    --background: #EBEBEB;
+    --darkblue: #21272b;
+    --box: #21272bc9;
+    --lightblue: #1bb4e8;
+    --ocher: #c6b07f;
+    --footer: #CBCFD3;
+    --pagefont: 'Open Sans', sans-serif;
+}
+
+/* all */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--pagefont);
+}
+
+.page {
+    margin: 0 auto;
+    width: 980px;
+}
+
+/* header */
+
+header {
+    background-color: var(--darkblue);
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 980px;
+    z-index: 1;
+}
+
+.accent {
+    color: var(--lightblue) !important;
+}
+
+#title {
+    display: flex;
+    align-items: end;
+    color: white;
+    margin: 0 0 10px 20px;
+}
+
+#title img {
+    margin: 0 13px 8px 5px;
+}
+
+#title h1 {
+    color: var(--lightblue);
+}
+
+#title h1, #title h2 {
+    font: italic 400 1.46em var(--pagefont);
+    line-height: 29px;
+}
+
+#title h2 {
+    padding-bottom: 2px;
+}
+
+.headtitle {
+    flex-direction: column;
+}
+
+/* menu */
+
+.navmenu {
+    margin-top: 62px;
+    display: flex;
+    list-style: none;
+}
+
+.navmenu li {
+    padding: 0 27px;
+    font-size: 0.8em;
+    font-weight: 300;
+    border-left: 0.5px solid white;
+}
+
+.navmenu li:first-of-type {
+    border: 0px;
+}
+
+.navmenu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.navmenu a:hover {
+    color: var(--lightblue);
+}
+
+/* main */
+
+main {
+    background-color: white;
+    padding-top: 93px;
+}
+
+.bgtitle {
+    background: url(../images/header.jpg);
+    background-size: cover;
+    padding-top: 355px;
+    filter: brightness(0.25) opacity(0.75);
+}
+
+.pagtitle h2 {
+    text-align: center;
+    font: italic 700 2em var(--pagefont);
+    color: white;
+    position: relative;
+    bottom: 220px;
+}
+
+/* principal */
+
+#principal {
+    font-style: italic;
+    color: white;
+    display: flex;
+}
+
+.box {
+    position: relative;
+    background-color: var(--box);
+    min-width: 420px;
+    height: 225px;
+    top: 210px;
+    left: -461px;
+    padding: 25px 45px 40px 20px;
+}
+
+#principal h2 {
+    font-size: 1.62em;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.insidebox {
+    padding-top: 26px;
+    display: flex;
+}
+
+.insidebox img {
+    margin: 5px 10px 0 0;
+    height: 37px;
+}
+
+#principal p {
+    font-size: 1.1em;
+}
+
+#principal span {
+    color: var(--ocher);
+    font-size: 1.2em;
+}
+
+/* topics */
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin: 15px 30px 0 30px;
+    padding-bottom: 40px;
+}
+
+.subtitle {
+    color: white;
+    display: flex;
+}
+
+.subtitle h2 {
+    font: italic 400 1.3em var(--pagefont);
+    margin-top: 5px;
+}
+
+.destinos .subtitle {
+    background-color: var(--lightblue);
+}
+
+.destinos .subtitle img {
+    margin: 0 5px;
+}
+
+.frota .subtitle {
+    background-color: var(--ocher);
+}
+
+.frota .subtitle img {
+    margin: 3px 7px;
+}
+
+.topics h3 {
+    font: italic 400 1.1em var(--pagefont);
+    padding: 20px 0 10px 0;
+}
+
+.topics p {
+    font: 400 0.8em var(--pagefont);
+    padding: 10px 0 22px 0;
+}
+
+.destinos p {
+    margin-bottom: 18px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 13px;
+    column-gap: 5px;
+}
+
+/* aluguel */
+
+.aluguel {
+    max-width: 930px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.aluguel img {
+    max-width: 450px;
+    margin: 15px 0 10px;
+}
+
+.aluguel p {
+    margin-bottom: 10px;
+}
+
+.aluguel h2 {
+    color: white;
+    background-color: var(--box);
+    padding: 5px;
+    text-align: center;
+    font: italic 400 1.2em var(--pagefont);
+}
+
+/* destinos */
+
+.destination {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.destination div {
+    display: flex;
+}
+
+.destination img {
+    max-width: 450px;
+    margin: 10px 0 20px;
+}
+
+.destination p {
+    padding: 60px 40px 0;
+}
+
+.destination h2 {
+    color: white;
+    background-color: var(--box);
+    padding: 5px;
+    text-align: center;
+    font: italic 400 1.2em var(--pagefont);
+}
+
+/* tripulação */
+
+.trip {
+    margin: 0 50px;
+    padding-bottom: 40px;
+    text-indent: 15px;
+    line-height: 1.5em;
+}
+
+/* contato */
+
+form {
+    padding: 0 10px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form div {
+    padding: 7px;
+}
+
+form label {
+    font: normal 700 0.8em var(--pagefont);
+    color: var(--ocher);
+    cursor: text;
+    text-transform: uppercase;
+}
+
+#nome, #email, #senha {
+    width: 100%;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid;
+    font-family: var(--pagefont);
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    margin-top: 3px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid;
+    font-family: var(--pagefont);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    font: normal 600 0.7em var(--pagefont);
+    background-color: var(--darkblue);
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--box);
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    font-size: 0.75em;
+    background-color: var(--footer);
+}
+
+footer p {
+    width: 980px;
+    padding: 25px 0;
+    background-color: var(--background);
+    margin: 0 auto;
+    text-indent: 15px;
+}
+
+footer .adm {
+    width: 980px; 
+    margin-top: -67px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+footer p a {
+    color: var(--darkblue);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+footer p a:hover {
+    color: var(--lightblue);
+}
+
+#Mensagens {
+    width: 880px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+tbody tr {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+tbody tr:hover {
+    background-color: #ddd; 
+}
+
+tbody tr td {
+    padding: 8px; 
+    border: 1px solid #ddd; 
+}
